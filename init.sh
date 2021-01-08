@@ -5,6 +5,7 @@ then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+# TODO: does not give enough permission to do the processes below. fix it later
 read -r -s -p "[sudo] sudo password for $(whoami):" pass
 
 if ! which nvm
