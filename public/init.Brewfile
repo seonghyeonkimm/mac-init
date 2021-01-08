@@ -15,6 +15,7 @@ brew "redis", restart_service: true
 brew "yarn"
 brew "z"
 brew "zlib"
+brew "neovim"
 
 cask "iterm2"
 cask "google-chrome"
