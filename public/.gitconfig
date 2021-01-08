@@ -1,8 +1,7 @@
 [user]
-	name = ted
-	email = ted@kcd.co.kr
+	name = <YOUR_NAME>
+	email = <YOUR_EMAIL>
 [core]
-	excludesfile = /Users/ted/.gitignore_global
 	verbose = true
 	editor = vim
 	quotepath = false
@@ -13,8 +12,6 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-[commit]
-	template = /Users/ted/.stCommitMsg
 [credential]
 	helper = store
 [push]
@@ -24,39 +21,6 @@
   autostash = true
 [merge]
   ff = only
-[alias]
-  br = branch
-  s = status -sb
-  rs = restore
-  rss = restore --staged
-  sw = switch
-  co = switch
-  cob = switch -c
-  swc = switch -c
-  lg = log --oneline --decorate
-  graph = log --oneline --decorate --graph --all
-  search = "!f() { git lg -i --grep=$1; }; f"
-  diff-search = log -p -S
-  cm = commit
-  amend = commit --amend
-  amn = commit --amend --no-edit
-  aam = commit -a --amend
-  aamn = commit -a --amend --no-edit
-  fix = commit --fixup
-  uc = reset HEAD~1
-  rh = reset --hard HEAD
- open = "!f() { open https://github.com/koreacreditdata/$(echo ${PWD##*/})/ commit/$1; }; f"
-  prune = remote prune origin
-  up = "!git fetch; git pull"
-  git = "!exec git"
-  rc = rebase --continue
-  ra = rebase --abort
-  cpc = cherry-pick --continue
-  cpa = cherry-pick --abort
-  rb = "!f() { git rebase -i HEAD~$1; }; f"
-  rbc = "!f() { git rebase -i $1^; }; f"
-  brc = rev-parse --abbrev-ref HEAD
-  ups = "!f() { git branch --set-upstream-to=origin/$(git brc) $(git brc); } ; f"
 [color]
   ui = auto
 [http]
