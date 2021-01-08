@@ -7,7 +7,15 @@ scripts to initialize macbook at the first day
 ```shellscript
 git clone git@github.com:seonghyeonkimm/mac-init.git;
 
-cd mac-init && ./main.sh
+cd mac-init;
+
+# you need to run this script as superuser
+sudo -s;
+
+./main.sh;
+
+# get out of root access shell
+exit;
 ```
 
 ## Manual setup
